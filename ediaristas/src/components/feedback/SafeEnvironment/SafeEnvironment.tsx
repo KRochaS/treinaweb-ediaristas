@@ -6,6 +6,7 @@ export function SafeEnvironment() {
         <SafeEnvironmentContainer>
             <Container>
                 Ambiente Seguro
+                <i className={'twf-lock'}/>
             </Container>
         </SafeEnvironmentContainer>
     )
