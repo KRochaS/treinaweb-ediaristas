@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { SafeEnvironment } from '../components/feedback/SafeEnvironment/SafeEnvironment';
 import { PageTitle } from '../components/data-display/PageTitle/PageTitle';
+import { UserInformation } from '../components/UserInformation/UserInformation';
+
 
 export default function Home() {
     return (
@@ -13,6 +15,8 @@ export default function Home() {
                 subtitle={'Preencha seu endereço e veja  todos os profissionais da sua localidade'}
 
             />
+
+            <UserInformation />
         </div>
     )
 }
