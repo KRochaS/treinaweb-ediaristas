@@ -1,5 +1,5 @@
 import { experimentalStyled as styled } from '@material-ui/core';
-import { Avatar } from '@material-ui/core';
+import { Avatar, Rating } from '@material-ui/core';
 
 
 export const UserInformationContainer = styled('div')`
@@ -8,12 +8,14 @@ export const UserInformationContainer = styled('div')`
 `;
 
 export const UserName = styled('div')`
-
-
+    font-weight: bold;
+    color: ${({ theme }) => theme.palette.text.primary};
+    font-size: ${({ theme }) => theme.typography.body2};
 `;
 
 export const UserDescription = styled('div')`
-
+    color: ${({ theme }) => theme.palette.text.secondary};
+    font-size: ${({ theme }) => theme.typography.body2};
 
 `;
 
@@ -22,7 +24,7 @@ export const AvatarStyled = styled(Avatar)`
 
 `;
 
-export const RatingStyled = styled('div')`
+export const RatingStyled = styled(Rating)`
 
 
 `;
