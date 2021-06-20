@@ -4,6 +4,9 @@ import { ThemeProvider } from '@material-ui/core';
 import theme from '../themes/theme';
 import Head from 'next/head';
 import { Header } from '../components/surfaces/Header/Header';
+import { Footer } from '../components/surfaces/Footer/Footer';
+import { AppContainer } from 'styles/pages/_app.style';
+
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -15,8 +18,11 @@ function MyApp({ Component, pageProps }) {
                 <link href="/fonts/tw-icons/css/treinaweb-icons.css" rel="stylesheet" />
             </Head>
             <ThemeProvider theme={theme}>
-                <Header />
-                <Component {...pageProps} />
+                <AppContainer>
+                    <Header />
+                    <Component {...pageProps} />
+                    <Footer />
+                </AppContainer>
             </ThemeProvider>
         </>
     )
